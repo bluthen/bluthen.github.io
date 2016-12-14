@@ -1,0 +1,442 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>hygrometry package &#8212; hygrometry 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">hygrometry 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">hygrometry package</a><ul>
+<li><a class="reference internal" href="#module-hygrometry">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hygrometry-package">
+<h1>hygrometry package<a class="headerlink" href="#hygrometry-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-hygrometry">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-hygrometry" title="Permalink to this headline">¶</a></h2>
+<p>hygrometry module.</p>
+<p>To install:</p>
+<p><cite>pip install git+https://github.com/bluthen/hygrometry.git</cite></p>
+<p>Sources and Citations:</p>
+<table class="docutils citation" frame="void" id="bricehalls" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[BriceHalls]</td><td><em>(<a class="fn-backref" href="#id3">1</a>, <a class="fn-backref" href="#id4">2</a>, <a class="fn-backref" href="#id9">3</a>)</em> Tim Brice, Todd Halls. Javascript wet bulb calculator. <a class="reference external" href="http://www.srh.noaa.gov/epz/?n=wxcalc_rh">http://www.srh.noaa.gov/epz/?n=wxcalc_rh</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="senshumgl" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[SensHumGl]</td><td>Sensirion. Humidity at a Glance. <a class="reference external" href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_Introduction_to_Relative_Humidity_V2.pdf">https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_Introduction_to_Relative_Humidity_V2.pdf</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="sensintrohum" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[SensIntroHum]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>, <a class="fn-backref" href="#id7">3</a>, <a class="fn-backref" href="#id8">4</a>)</em> Sensirion. Introduction to Humidity. <a class="reference external" href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_at_a_Glance_V1.pdf">https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_at_a_Glance_V1.pdf</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="noaaheatindex" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[NOAAHeatIndex]</a></td><td>The Heat Index Equation. <a class="reference external" href="http://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml">http://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="planetabshum" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[PlanetAbsHum]</a></td><td>PlanetCalc. Relative humidity to absolute humidity and vise versa calculators. <a class="reference external" href="http://planetcalc.com/2167/">http://planetcalc.com/2167/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">conv_f2c</span><span class="p">(</span><span class="mf">70.0</span><span class="p">)</span>
+<span class="go">21.111128</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="hygrometry.absolute_humidity">
+<code class="descclassname">hygrometry.</code><code class="descname">absolute_humidity</code><span class="sig-paren">(</span><em>t</em>, <em>rh</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.absolute_humidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives you the mass of water vapor in volume of dry air. Units in g/m^3 See <a class="reference internal" href="#sensintrohum" id="id1">[SensIntroHum]</a></p>
+<p>Different pressure seem to affect absolute humidity slightly. For a more accurate calculation that uses pressure,
+see <a class="reference internal" href="#planetabshum" id="id2">[PlanetAbsHum]</a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t</strong> (<em>float</em>) &#8211; Temperature in Celsius.</li>
+<li><strong>rh</strong> &#8211; Relative Humidity 0-100</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Absolute humidity g/m^3</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">absolute_humidity</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+<span class="go">13.780667458722558</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.calc_es_v_dew">
+<code class="descclassname">hygrometry.</code><code class="descname">calc_es_v_dew</code><span class="sig-paren">(</span><em>t_c</em>, <em>rh</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.calc_es_v_dew" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates vapor pressure, saturation vapor pressure, and dew point in celcius. See <a class="reference internal" href="#bricehalls" id="id3">[BriceHalls]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t_c</strong> (<em>float</em>) &#8211; Temperature in Celcius.</li>
+<li><strong>rh</strong> (<em>float</em>) &#8211; Relative humdity 0-100</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">[vapor pressure, saturation vapor pressure, dew point]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">[float, float, float]</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">calc_es_v_dew</span><span class="p">(</span><span class="mf">20.1</span><span class="p">,</span> <span class="mf">50.3</span><span class="p">)</span>
+<span class="go">[23.514683799663736, 11.827885951230858, 9.451033779734948]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.calc_wb">
+<code class="descclassname">hygrometry.</code><code class="descname">calc_wb</code><span class="sig-paren">(</span><em>e_difference</em>, <em>t_w_guess</em>, <em>c_temp</em>, <em>mb_pressure</em>, <em>e2</em>, <em>previoussign</em>, <em>incr</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.calc_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Incremental wetbulb calculation. See <a class="reference internal" href="#bricehalls" id="id4">[BriceHalls]</a></p>
+<p>Recommend not to use directly, use wetbulb() instead</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.conv_c2f">
+<code class="descclassname">hygrometry.</code><code class="descname">conv_c2f</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.conv_c2f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert Celsius to Fahrenheit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>c</strong> (<em>float</em>) &#8211; Temperature in Celsius</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Temperature in Fahrenheit</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">conv_c2f</span><span class="p">(</span><span class="mf">21.111128</span><span class="p">)</span>
+<span class="go">70.0000304</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.conv_f2c">
+<code class="descclassname">hygrometry.</code><code class="descname">conv_f2c</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.conv_f2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert fahrenheit to Celsius</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>f</strong> (<em>float</em>) &#8211; Temperature in Fahrenheit</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Temperature in Celsius</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">conv_f2c</span><span class="p">(</span><span class="mf">70.0</span><span class="p">)</span>
+<span class="go">21.111128</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.dew">
+<code class="descclassname">hygrometry.</code><code class="descname">dew</code><span class="sig-paren">(</span><em>t_c</em>, <em>rh</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.dew" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives you the Dew point given a RH at a Temperature. See <a class="reference internal" href="#sensintrohum" id="id5">[SensIntroHum]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t_c</strong> (<em>float</em>) &#8211; Temperature in Celsius</li>
+<li><strong>rh</strong> (<em>float</em>) &#8211; Relative Humidity 0-100</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dew point in Celsius</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">dew</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+<span class="go">16.693149006198954</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.heat_index">
+<code class="descclassname">hygrometry.</code><code class="descname">heat_index</code><span class="sig-paren">(</span><em>t</em>, <em>rh</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.heat_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives you the heat index in Celsius. See <a class="reference internal" href="#noaaheatindex" id="id6">[NOAAHeatIndex]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t</strong> (<em>float</em>) &#8211; Temperature in Celsius</li>
+<li><strong>rh</strong> (<em>float</em>) &#8211; Relative humidity 0-100</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Heat index in Celsius.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">heat_index</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+<span class="go">25.644464960000008</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.humidity_adjust_temp">
+<code class="descclassname">hygrometry.</code><code class="descname">humidity_adjust_temp</code><span class="sig-paren">(</span><em>rh1</em>, <em>t_c1</em>, <em>t_c2</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.humidity_adjust_temp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives you would the relative humidity would be if just the temperature changed. See: <a class="reference internal" href="#sensintrohum" id="id7">[SensIntroHum]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rh1</strong> (<em>float</em>) &#8211; Initial relative humidity 0-100</li>
+<li><strong>t_c1</strong> (<em>float</em>) &#8211; Initial temperature in Celsius.</li>
+<li><strong>t_c2</strong> (<em>float</em>) &#8211; The temperature to find the new RH at.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The adjusted RH (0-100) at Temperature t_c2</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">humidity_adjust_temp</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="go">44.784059201238314</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.mixing_ratio">
+<code class="descclassname">hygrometry.</code><code class="descname">mixing_ratio</code><span class="sig-paren">(</span><em>t</em>, <em>rh</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.mixing_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives you the mixing ratio in g/kg. See <a class="reference internal" href="#sensintrohum" id="id8">[SensIntroHum]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t</strong> (<em>float</em>) &#8211; Temperature in Celsius</li>
+<li><strong>rh</strong> (<em>float</em>) &#8211; Relative humidity 0-100</li>
+<li><strong>p</strong> (<em>float</em>) &#8211; Barometric Air pressure in hPa</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Mixing ratio g/kg</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">mixing_ratio</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">980</span><span class="p">)</span>
+<span class="go">22.266502023175242</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="hygrometry.wetbulb">
+<code class="descclassname">hygrometry.</code><code class="descname">wetbulb</code><span class="sig-paren">(</span><em>t_c</em>, <em>rh</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#hygrometry.wetbulb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate Wet bulb in Celcius given temperature, relative humidity, and pressure.
+See: <a class="reference internal" href="#bricehalls" id="id9">[BriceHalls]</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t_c</strong> (<em>float</em>) &#8211; Temperature in Celcius.</li>
+<li><strong>rh</strong> (<em>float</em>) &#8211; Relative humdity 0-100</li>
+<li><strong>p</strong> (<em>float</em>) &#8211; Pressure in hPa</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hygrometry</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hygrometry</span><span class="o">.</span><span class="n">wetbulb</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">27.62960000000001</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">hygrometry 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Russell Valentine.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.
+    </div>
+  </body>
+</html>
